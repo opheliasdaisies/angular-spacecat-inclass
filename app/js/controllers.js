@@ -8,4 +8,6 @@ spacecatApp.controller('CatListCtrl', function($scope, $http){
     $scope.cats = data;
   });
 
+  $scope.orderProp = "name";
+
 });
