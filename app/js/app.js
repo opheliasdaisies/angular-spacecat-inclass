@@ -1,3 +1,6 @@
 'use strict';
 
-var spacecatApp = angular.module("spacecatApp", []);
+var spacecatApp = angular.module("spacecatApp", [
+  "ngRoute",
+  "spacecatControllers
+  "]);
