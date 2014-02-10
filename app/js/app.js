@@ -11,5 +11,9 @@ spacecatApp.config(["$routeProvider",
     when("/cats", {
       templateUrl: "partials/cat-list.html",
       controller: "CatListCtrl"
+    }).
+    when("/cats/:id", {
+      templateUrl: "partials/cat-detail.html",
+      controller: "CatDetailCtrl"
     })
   }]);
