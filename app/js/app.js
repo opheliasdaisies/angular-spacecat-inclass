@@ -9,7 +9,7 @@ spacecatApp.config(["$routeProvider",
   function($routeProvider){
     $routeProvider.
     when("/cats", {
-      templateURL: "partials/cat-list.html",
+      templateUrl: "partials/cat-list.html",
       controller: "CatListCtrl"
     })
   }]);

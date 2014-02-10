@@ -2,7 +2,8 @@
 
 var spacecatControllers = angular.module("spacecatControllers", []);
 
-spacecatApp.controller('CatListCtrl', function($scope, $http){
+spacecatApp.controller('CatListCtrl', ["$scope", "$http",
+  function($scope, $http){
 
   $http.get('cats/cats.json').success(function(data){
     $scope.cats = data;
@@ -10,4 +11,4 @@ spacecatApp.controller('CatListCtrl', function($scope, $http){
 
   $scope.orderProp = "name";
 
-});
+}]);
